@@ -1,0 +1,19 @@
+export interface IMatches {
+  id: number,
+  homeTeamId: number,
+  homeTeamGoals: number,
+  awayTeamId: number,
+  awayTeamGoals: number,
+  inProgress: boolean,
+  homeTeam?: {
+    teamName: string;
+  } | undefined,
+  awayTeam?: {
+    teamName: string
+  } | undefined
+}
+
+export interface IMatchUpdate {
+  homeTeamGoals: number,
+  awayTeamGoals: number,
+}
